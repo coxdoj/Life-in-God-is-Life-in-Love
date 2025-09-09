@@ -2,47 +2,91 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <!-- Either delete <base> or set it to your repo path -->
-  <!-- <base href="/YOUR-USER/YOUR-REPO/"> -->
-  <title>PLANS</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- REMOVE node_modules reference (not served on Pages) -->
-  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:wght@300;400;600;700" rel="stylesheet">
-  <link rel="stylesheet" href="./ig-theme.css">
+  <title>Crown Words Labs</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon-180x180.png">
+
+  <meta name="theme-color" content="#0B0F14">
   <style>
-    /* Fallback styles if styles.css lacks these */
-    .card{background:#10161d;border:1px solid #1f2a34;border-radius:14px;padding:16px;margin:12px auto;max-width:420px;color:#e6e8ea;font-family:system-ui}
-    .premium{border:2px solid #2ecc71;background:linear-gradient(135deg,#10161d,#0c1319);text-align:center}
-    .subscribe-btn{background:linear-gradient(90deg,#5ad67d,#2ecc71);font-size:16px;font-weight:600;padding:14px 26px;border-radius:40px;border:0;cursor:pointer}
+    body {
+      background: #0b0f14;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Logo Glow */
+    .logo {
+      width: 150px;
+      margin: 20px auto;
+      display: block;
+      filter: drop-shadow(0 0 20px #ffd700);
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { filter: drop-shadow(0 0 15px #ffd700); }
+      to   { filter: drop-shadow(0 0 35px #ffec8b); }
+    }
+
+    /* Subscription Cards */
+    .card {
+      border: 2px solid #2ecc71;
+      background: #141a22;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+    .card h3 { margin-bottom: 15px; }
+
+    .subscribe-btn {
+      background: linear-gradient(90deg, #5ad67d, #2ecc71);
+      font-size: 16px;
+      font-weight: 600;
+      padding: 14px 26px;
+      border-radius: 40px;
+      border: none;
+      cursor: pointer;
+      color: #0b0f14;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .subscribe-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #2ecc71, #5ad67d);
+    }
   </style>
 </head>
-<body class="ig-scrollbar">
-  <!-- If ./dist/src/index.js is not needed, you can remove <app-root> -->
-  <app-root></app-root>
+<body>
+  <!-- Logo -->
+  <img src="assets/logo.png" alt="Crown Words Labs Logo" class="logo">
 
-  <div class="card premium">
+  <!-- Subscription Cards -->
+  <div class="card">
     <h3>Crown Words</h3>
-    <a href="https://buy.stripe.com/eVqcN70fu5chfNb1Yz0M00" target="_blank">
+    <a href="https://buy.stripe.com/eVqcN70fu5chfNb1Yz0oM0" target="_blank">
       <button class="subscribe-btn">Subscribe · €5/month</button>
     </a>
   </div>
 
-  <div class="card premium">
+  <div class="card">
     <h3>Eternal Investment Tracker</h3>
-    <a href="https://buy.stripe.com/6oUdRb5zO7kp58xbz90M01" target="_blank">
+    <a href="https://buy.stripe.com/6oUdRb5zO7kp58xbz90oM1" target="_blank">
       <button class="subscribe-btn">Subscribe · €7/month</button>
     </a>
   </div>
 
-  <div class="card premium">
+  <div class="card">
     <h3>Worship Companion</h3>
-    <a href="https://buy.stripe.com/dRm7sNaU834930pgTt0M02" target="_blank">
+    <a href="https://buy.stripe.com/dRm7sNaU834930pgTt0oM2" target="_blank">
       <button class="subscribe-btn">Subscribe · €10/month</button>
     </a>
   </div>
-
-  <!-- Remove this if the file ./dist/src/index.js does not exist on Pages -->
-  <script type="module" src="./dist/src/index.js"></script>
 </body>
 </html>
