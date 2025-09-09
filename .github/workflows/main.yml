@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crown Words Links</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0b0f14;
+      color: #e6e8ea;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      color: #5ad67d;
+    }
+    .link-block {
+      margin: 15px 0;
+    }
+    a.button {
+      display: inline-block;
+      background: linear-gradient(90deg, #5ad67d, #2ecc71);
+      color: #071309;
+      font-weight: 600;
+      padding: 14px 24px;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+    a.button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #2ecc71, #5ad67d);
+    }
+  </style>
+</head>
+<body>
+  <h1>Crown Words · Links</h1>
+  <p>Faith-centered tools · God’s Kingdom established beyond scope</p>
+
+  <!-- Stripe subscription buttons -->
+  <div class="link-block">
+    <a href="https://buy.stripe.com/eVqcN70fu5chfNb1Yz0M00" target="_blank" class="button">
+      Crown Words · €5/month
+    </a>
+  </div>
+  <div class="link-block">
+    <a href="https://buy.stripe.com/6oUdRb5zO7kp58xbz90M01" target="_blank" class="button">
+      Eternal Investment Tracker · €7/month
+    </a>
+  </div>
+  <div class="link-block">
+    <a href="https://buy.stripe.com/dRm7sNaU834930pgTt0M02" target="_blank" class="button">
+      Worship Companion · €10/month
+    </a>
+  </div>
+
+  <!-- Socials -->
+  <div class="link-block">
+    <a href="https://twitter.com/CrownWordsLabs" target="_blank" class="button">Twitter/X</a>
+  </div>
+  <div class="link-block">
+    <a href="https://facebook.com/CrownWordsLabs" target="_blank" class="button">Facebook</a>
+  </div>
+  <div class="link-block">
+    <a href="https://instagram.com/crownwords.labs" target="_blank" class="button">Instagram</a>
+  </div>
+  <div class="link-block">
+    <a href="https://linkedin.com/company/crown-words-labs" target="_blank" class="button">LinkedIn</a>
+  </div>
+  <div class="link-block">
+    <a href="https://youtube.com/@CrownWordsLabs" target="_blank" class="button">YouTube</a>
+  </div>
+</body>
+</html>
