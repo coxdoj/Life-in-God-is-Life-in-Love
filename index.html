@@ -1,90 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crown Words Labs</title>
-
-  <!-- Favicons -->
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/favicon-32x32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="assets/favicon-180x180.png">
-
-  <!-- Theme color -->
-  <meta name="theme-color" content="#4B0082" />
-
+  <meta name="theme-color" content="#4B0082">
   <style>
     body {
+      font-family: system-ui, sans-serif;
+      background: linear-gradient(180deg, #0b0f14, #1a0f1f);
+      color: #e6e8ea;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(180deg, #0b0f14, #121820);
-      color: #fff;
+      padding: 0;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
-
-    /* Banner */
-    .banner {
-      width: 100%;
-      max-height: 280px;
-      overflow: hidden;
-      background: #4B0082;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    header {
+      background: linear-gradient(90deg, #4B0082, #8A2BE2);
+      padding: 20px;
+      color: #FFD700;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-shadow: 0 0 10px #FFD700;
     }
-    .banner img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-
-    /* Logo Glow */
     .logo {
-      width: 160px;
-      margin: -80px auto 20px;
-      display: block;
-      filter: drop-shadow(0 0 15px #ffd700);
-      animation: glow 2.5s infinite alternate;
-      position: relative;
-      z-index: 10;
+      margin: 20px auto;
+      max-width: 200px;
+      animation: glow 3s infinite alternate;
     }
     @keyframes glow {
-      from { filter: drop-shadow(0 0 12px #ffd700); }
-      to   { filter: drop-shadow(0 0 32px #ffec8b); }
+      from { filter: drop-shadow(0 0 5px gold); }
+      to   { filter: drop-shadow(0 0 20px gold); }
     }
-
-    h1 {
-      font-size: 2rem;
-      margin: 10px 0 30px;
-      color: #5ad67d;
-    }
-
-    .cards {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      max-width: 420px;
-      margin: 0 auto 50px;
-      padding: 0 20px;
-      flex: 1;
-    }
-
     .card {
       border: 2px solid #2ecc71;
       background: #0b0f14;
-      border-radius: 12px;
       padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     }
-
-    .card h3 {
-      margin: 0 0 15px;
-      color: #5ad67d;
-    }
-
     .subscribe-btn {
       background: linear-gradient(90deg, #5ad67d, #2ecc71);
       font-size: 16px;
@@ -94,65 +52,49 @@
       border: none;
       cursor: pointer;
       transition: transform 0.2s ease, background 0.2s ease;
-      text-decoration: none;
-      color: #000;
-      display: inline-block;
     }
-
     .subscribe-btn:hover {
       transform: scale(1.05);
       background: linear-gradient(90deg, #2ecc71, #5ad67d);
     }
-
     footer {
       background: #0b0f14;
-      border-top: 1px solid #2ecc71;
-      padding: 25px;
-      color: #ccc;
-      font-size: 14px;
+      padding: 30px;
+      font-size: 0.9em;
       line-height: 1.6;
-    }
-    footer strong {
-      color: #ffd700;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <!-- Banner -->
-  <div class="banner">
-    <img src="assets/banner.png" alt="Crown Words Labs Banner">
-  </div>
+  <header>
+    Crown Words Labs · God’s Kingdom Established Beyond Scope
+  </header>
 
-  <!-- Logo -->
   <img src="assets/logo.png" alt="Crown Words Labs Logo" class="logo">
 
-  <h1>Crown Words Labs</h1>
-
   <!-- Subscription Cards -->
-  <div class="cards">
-    <div class="card">
-      <h3>Crown Words</h3>
-      <a href="https://buy.stripe.com/6oUcN75zO5ch44t46H0oM05" target="_blank" class="subscribe-btn">
-        Subscribe · €5/month
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>Eternal Investment Tracker</h3>
-      <a href="https://buy.stripe.com/6oUdRb5zO7kp58xbz90oM01" target="_blank" class="subscribe-btn">
-        Subscribe · €7/month
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>Worship Companion</h3>
-      <a href="https://buy.stripe.com/dRm7sNaU834930pgTt0oM02" target="_blank" class="subscribe-btn">
-        Subscribe · €10/month
-      </a>
-    </div>
+  <div class="card">
+    <h3>Crown Words</h3>
+    <a href="https://buy.stripe.com/6oUcN75zO5ch44t46H0oM05" target="_blank">
+      <button class="subscribe-btn">Subscribe · €5/month</button>
+    </a>
   </div>
 
-  <!-- Footer with full divine covering -->
+  <div class="card">
+    <h3>Eternal Investment Tracker</h3>
+    <a href="PASTE_FINANCE_LINK_HERE" target="_blank">
+      <button class="subscribe-btn">Subscribe · €7/month</button>
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>Worship Companion</h3>
+    <a href="PASTE_WORSHIP_LINK_HERE" target="_blank">
+      <button class="subscribe-btn">Subscribe · €10/month</button>
+    </a>
+  </div>
+
   <footer>
     <p><strong>God’s Kingdom · Established Beyond Scope</strong></p>
     <p>All glory and power belong to <strong>Jesus Christ</strong>, the Alpha and Omega.</p>
@@ -162,6 +104,7 @@
     <p>The immersion power of God establishes His eternal wealth and Kingdom forever.</p>
     <p>We stand under the <strong>Blood of Jesus Christ</strong> that speaks better words.</p>
     <p>By the Father’s <strong>Dominus power</strong> (Habakkuk 3:3) and the witness of <strong>Hebrews 12:22</strong>, it is sealed for eternity.</p>
+    <p>📧 Contact: <a href="mailto:kwagaladavid1@icloud.com">kwagaladavid1@icloud.com</a></p>
   </footer>
 </body>
 </html>
