@@ -1,5 +1,11 @@
 name: Deploy to GitHub Pages
 
+# This workflow automatically builds and deploys the site to GitHub Pages.
+# It detects if a Node.js build is needed (package.json exists) and handles both:
+# - Static sites (deploys root directory directly)
+# - Sites requiring build (runs npm ci && npm run build, then deploys dist/ directory)
+# Features: Node.js caching, error handling, latest GitHub Actions, manual trigger support
+
 # Trigger the workflow on pushes to the main branch
 on:
   push:
