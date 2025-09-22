@@ -25,14 +25,14 @@ window.H3 = {
     t = t.replace(/([,.;:!?])(?!\s|$)/g,"$1 ");
     t = t.replace(/\s{2,}/g," ");
     t = this.smartQuotes(t);
-    t = t.replace(/\bi\bi/g,"I").replace(/\bi\sam\bi/gi,"I am").replace(/\bi'm\bi/gi,"I'm");
+    t = t.replace(/\bi\b/g,"I").replace(/\bi\sam\b/gi,"I am").replace(/\bi'm\b/gi,"I'm");
     t = this.capFirst(t);
     return this.clean(t);
   },
 
   // --- self assessment ---
   assess(s){
-    const text = this.clean(s||""
+    const text = this.clean(s||"");
     const words = text ? text.split(/\s+/).length : 0;
     const sentences = (text.match(/[.!?]+/g)||[]).length || (text?1:0);
     const chars = text.replace(/\s/g,"").length;
@@ -95,3 +95,4 @@ window.H3 = {
 
 // Optional: auto-warm on load
 if (document.readyState !== "loading") { H3.warmAssets(); }
+else document.addEventListener("DOMContentLoaded", ()=>H3.warmAssets());
